@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script lang="javascript">
+        function button_click() {
+            console.log("The button was clicked");
+        }
+        function Fred2Wilma() {
+            let fred = document.getElementById("fred").value;
+            document.getElementById("wilma").value = fred;
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>My sample HTML page</h1>
+
+    <!-- The table tags -->
+    <table>
+        <thead >
+            <tr>
+                <td>Name</td>
+                <td>Color</td>
+                <td>Number</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Elana</td>
+            <td>Blue</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Sarah</td>
+            <td>Silver</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Sarah</td>
+            <td>Azure</td>
+            <td>18</td>
+        </tr>
+
+
+
+
+    </table>
+
+
+    <!-- The Select/Option tags -->
+    <p>
+        <span> Pick the state: </span>
+        <select>
+            <option value="OH">Ohio</option>
+            <option value="KY">Kentucky</option>
+            <option value="IN" selected>Indiana</option>
+        </select>
+
+
+    </p>
+
+    <!-- The Input Tag -->
+    <p>
+        <span>Enter your name:</span>
+        <input id="fred" type="text" value="Fred">
+        <button onclick="Fred2Wilma()">Fred to Wilma</button>
+        <input id="wilma" type="text" value="Wilma">
+
+
+    </p>
+
+    <!-- The Button tag -->
+    <button onclick="button_click()">Click me!</button>
+    <!--Anchor Tag  -->
+    <a target="_blank" href="http://maxtrain.com">Max Training</a>
+</body>
+
+</html>
